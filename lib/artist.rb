@@ -8,6 +8,7 @@ class Artist
   
   extend Memorable::ClassMethods
   include Memorable::InstanceMethods
+  extend Findable::ClassMethods
 
   def initialize
     @@artists << self
