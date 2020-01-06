@@ -11,7 +11,7 @@ class Artist
   extend Findable::ClassMethods
 
   def initialize
-    @@artists << self
+    super
     @songs = []
   end
 
